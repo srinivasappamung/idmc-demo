@@ -16,14 +16,14 @@
         "value" : "@1"
       } ],
       "additionalInfo" : {
-        "description" : "",
+        "description" : "Checkout to test ",
         "contentType" : "JSON",
         "documentState" : "VALID"
       }
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2025-03-28T11:48:29.106Z",
+  "updateTime" : "2025-03-28T11:54:44.913Z",
   "objectRefs" : [ {
     "id" : "dvrISU7c4mPioQRakFCZST",
     "name" : "FF_TEST",
