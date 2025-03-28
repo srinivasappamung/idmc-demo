@@ -1,0 +1,47 @@
+{
+  "objectInfo" : {
+    "id" : "3yPordyjmD0cSFQz2IDfit",
+    "name" : "Taskflow1",
+    "type" : "TASKFLOW",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "xPUjJBUhtycotFg-gt-30387022-2024-07-11T16:30:55.38Z::tf.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "updateTime" : "2025-03-28T11:48:29.105Z",
+  "objectRefs" : [ {
+    "id" : "8UalT5x4Tn7cjqbKf39dQE",
+    "name" : "GetIPUReport",
+    "type" : "PROCESS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "IxL-gt-723159-2024-07-10T07:22:13.551Z::pd.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Team/SriniM"
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}

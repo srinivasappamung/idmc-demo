@@ -1,0 +1,47 @@
+{
+  "objectInfo" : {
+    "id" : "2xsd1YsuxqveYoG4KPqcQt",
+    "name" : "SalesforceWrite",
+    "type" : "PROCESS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "ShsZvPP8KnBQ9WY-gt-6567001-2024-08-15T17:19:57.2Z::pd.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "updateTime" : "2025-03-28T11:48:29.107Z",
+  "objectRefs" : [ {
+    "id" : "gzA7Zp2pRsLegMJXfBxMQ4",
+    "name" : "AC-SalesForceWrite",
+    "type" : "AI_CONNECTION",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "xyjJYKqUlLnzYLn-gt-6484713-2024-08-15T11:52:40.379Z::conn.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Team/SriniM"
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}

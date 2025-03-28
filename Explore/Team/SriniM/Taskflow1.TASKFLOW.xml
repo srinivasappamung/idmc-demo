@@ -1,0 +1,116 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>xPUjJBUhtycotFg-gt-30387022-2024-07-11T16:30:55.38Z::tf.xml</types1:EntryId>
+      <types1:Name>Taskflow1-2</types1:Name>
+      <types1:MimeType>application/xml+taskflow</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>srinivasappa.mungctr@highlinewarren.com.dev</types1:CreatedBy>
+      <types1:CreationDate>2024-07-11T16:30:55Z</types1:CreationDate>
+      <types1:ModifiedBy>srinivasappa.mungctr@highlinewarren.com.dev</types1:ModifiedBy>
+      <types1:ModificationDate>2025-02-05T13:43:31Z</types1:ModificationDate>
+      <types1:PublicationStatus>published</types1:PublicationStatus>
+      <types1:PublishedBy>srinivasappa.mungctr@highlinewarren.com.dev</types1:PublishedBy>
+      <types1:PublicationDate>2025-02-05T13:43:41Z</types1:PublicationDate>
+      <types1:PublishedContributionId>project:/tf.Taskflow1-2/Taskflow1-2.tf.xml</types1:PublishedContributionId>
+      <types1:Entry>
+         <taskflow xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2010/10/avosScreenflow.xsd"
+                   xmlns:tfm="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"
+                   xmlns:list="urn:activevos:spi:list:functions"
+                   displayName="Taskflow1"
+                   name="Taskflow1-2"
+                   overrideAPIName="false">
+            <parameterSet xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"/>
+            <appliesTo/>
+            <description/>
+            <tags/>
+            <generator>Informatica Process Designer 11</generator>
+            <tempFields>
+               <field description="" name="IntegrationOps Task 1" type="reference">
+                  <options>
+                     <option hide="true" name="isAPITaskType">true</option>
+                     <option name="referenceTo">$po:GetIPUReport</option>
+                  </options>
+               </field>
+            </tempFields>
+            <notes/>
+            <deployment skipIfRunning="guid" suspendOnFault="false" tracingLevel="verbose">
+               <rest/>
+            </deployment>
+            <extData>
+               <nvpair name="treatEmptyStringAsNotNull">false</nvpair>
+               <nvpair name="treatEmptyObjectListAsArray">false</nvpair>
+            </extData>
+            <flow id="a">
+               <start id="b">
+                  <link id="lyhhiqpq" targetId="lyhhiqpy"/>
+               </start>
+               <eventContainer id="lyhhiqpy">
+                  <service id="lyhhiqpp">
+                     <title>IntegrationOps Task 1</title>
+                     <serviceName>avTaskflowLocalCalling</serviceName>
+                     <serviceGUID/>
+                     <serviceInput>
+                        <parameter name="GUID" source="constant" updatable="true">8UalT5x4Tn7cjqbKf39dQE</parameter>
+                        <parameter name="Task Type" source="constant" updatable="true">PROCESS</parameter>
+                        <parameter name="Agent Name" source="constant" updatable="true"/>
+                        <parameter name="Task Name" source="constant" updatable="true">GetIPUReport</parameter>
+                        <parameter name="taskField" source="nested">
+                           <operation source="field" to="GetIPUReport">temp.IntegrationOps Task 1</operation>
+                           <operation source="formula" to="GetIPUReport/input[1]/getIPUReportRequest">
+                              <expression language="XQuery">let $temp:='{
+    "username": "srinivasappa.mungctr@highlinewarren.com.dev",
+    "password": "1@Srinivas"
+}'
+return $temp</expression>
+                           </operation>
+                        </parameter>
+                     </serviceInput>
+                     <serviceOutput>
+                        <operation source="field"
+                                   to="temp.IntegrationOps Task 1/output/getIPUReportResponse">getIPUReportResponse</operation>
+                     </serviceOutput>
+                  </service>
+                  <link id="lyhhiqpr" targetId="c"/>
+                  <events>
+                     <catch faultField="temp.IntegrationOps Task 1/fault"
+                            id="lyhhiqpt"
+                            interrupting="true"
+                            name="error"/>
+                  </events>
+               </eventContainer>
+               <end id="c"/>
+            </flow>
+            <dependencies>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              displayName="GetIPUReport"
+                              isByCopy="true"
+                              name="GetIPUReport">
+                  <description/>
+                  <tags/>
+                  <detail>
+                     <field label="Input Parameters"
+                            name="input"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Output Parameters"
+                            name="output"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                  </detail>
+               </processObject>
+            </dependencies>
+         </taskflow>
+      </types1:Entry>
+      <types1:GUID>3yPordyjmD0cSFQz2IDfit</types1:GUID>
+      <types1:DisplayName>Taskflow1</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2025-03-28T11:48:28.772Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>
